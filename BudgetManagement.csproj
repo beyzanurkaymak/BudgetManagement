@@ -9,9 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataAccess\" />
-    <Folder Include="Business\" />
-    <Folder Include="UI\" />
+    <Compile Remove="Business\**" />
+    <Compile Remove="DataAccess\**" />
+    <Compile Remove="UI\**" />
+    <EmbeddedResource Remove="Business\**" />
+    <EmbeddedResource Remove="DataAccess\**" />
+    <EmbeddedResource Remove="UI\**" />
+    <None Remove="Business\**" />
+    <None Remove="DataAccess\**" />
+    <None Remove="UI\**" />
   </ItemGroup>
 
 </Project>
