@@ -1,9 +1,10 @@
-﻿namespace BudgetManagement.Entities
+﻿using BudgetManagement.Entities.Abstractions;
+
+namespace BudgetManagement.Entities.Models
 {
-    public class Expense
+    public class Income : BaseEntity
     {
-        public int Id { get; set; }
-        public string? Name { get; set; }
+
         public decimal Amount { get; set; }
         public string? Category { get; set; }
         public DateTime Date { get; set; }
